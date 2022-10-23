@@ -1,0 +1,65 @@
+1. What are the Wrapper classes available for primitive types ?
+ boolean  - java.lang.Boolean
+byte - java.lang.Byte
+char - java.lang.Character
+double - java.lang.Double
+float - java.lang.Float
+int - java.lang.Integer
+long - java.lang.Long
+short - java.lang.Short
+void - java.lang.Void
+
+
+2. What are the default or implicitly assigned values for data types in java ?
+boolean ---> false
+byte ----> 0
+short ----> 0
+int -----> 0
+long ------> 0l
+char -----> /u0000
+float ------> 0.0f
+double ----> 0.0d
+any object reference ----> null
+
+
+3. What is the default value of local variables in Java?
+There is no default value for local variables
+
+
+4. Difference between double and float variables in Java.
+In java, float takes 4 bytes in memory while Double takes 8 bytes in memory. Float is single precision floating point decimal number while Double is double precision decimal number.
+
+
+5. What is the default value of char data type in Java?
+The default value of a char primitive type is '\u0000'(null character) as stated in the Java Language Specification.
+The shortcut for 'u0000' is '\0', So the null can be represented either by 'u0000' or '\0'
+
+
+6. What Is Variable Initialization? How Is It Different Than Assignment?
+When we assign a value to a variable first time, it is known as variable initialization.
+ Before initialization objects have null value and primitive types have default values such as 0 or false. 
+ 
+ 
+7. Why Is Specifying DataType Mandatory In Java?
+Data type of a variable is an attribute which tells what kind of data that variable can have. 
+Every java variable takes up a certain amount of space in memory. How much memory a variable takes is depends on its datatype.
+
+
+8. Difference between long.Class and Long.TYPE ?
+They both represent the long primitive type. They are exactly the same.
+
+
+9. What is the difference between Data Type and Data Structure ?
+Data type: a set of values together with operations on that type Data structure: a physical implementation of a data type
+
+
+10. What Are The Rules For Naming Java Variables?
+There are some rules related to Java variable names:
+Java Variable names are case sensitive. Variable declared as var_1 is different than var1 or VAR1
+
+Variable name must start with a letter, or $ or _ character. No other special character or digits are allowed as first character of variable name.
+
+After the first character, java variable name can have digits as well along with letter, $ and _
+
+Variable name can not be equal to reserved keyword in java. For example, you can not give your variable name as int, if or boolean as they are reserved keyword in java.
+
