@@ -1,0 +1,33 @@
+Question 1: What is Java?
+
+-> Java is a high-level programming language. Java is a platform independent programming language.
+* It is different from other programming languages like C and C++ which needs a platform to be executed. Java comes with its platform on which its code is executed.
+
+IF ASKED A COUNTER QUESTION ABOUT WHAT IS PLATFORM DEPENDENT AND PLATFORM INDEPENDENT.
+
+Platform Dependent: It means the same as "hardware dependent" or "machine dependent" and refers to applications that run in only one hardware series with the operating system not being relevant.
+In contrast, "platform independent" means that the application can run in different operating environments. 
+
+
+Question 2: How does Java enable high performance?
+
+Java uses Just In Time compiler to enable high performance. It is used to convert the instructions into bytecodes.
+
+Question: 3. What is Just In Time Compiler?
+
+The Just-In-Time (JIT) compiler is an essential part of the JRE i.e. Java Runtime Environment, that is responsible for performance optimization of java based applications at run time. 
+The compiler is one of the key aspects in deciding the performance of an application for both parties i.e. the end-user and the application developer.
+
+Question 4. What are the features of JAVA?
+
+Features of Java are
+OOP concepts
+Object-oriented 
+Inheritance
+Encapsulation
+Polymorphism
+Abstraction
+Platform independent: 
+High Performance:
+Multi-threaded: A flow of execution is known as a Thread. 
+JVM creates a thread which is called the main thread. The user can create multiple threads by extending the thread class or by implementing the Runnable interface.
