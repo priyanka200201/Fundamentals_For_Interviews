@@ -1,0 +1,15 @@
+1. What is data-structure?
+ Data structure is a way of defining, storing & retrieving of data in a structural & systematic way. A data structure may contain different type of data items.
+ 
+2. What are various data-structures available?
+Data structure availability may vary by programming languages. Commonly available data structures are list, arrays, stack, queues, graph, tree etc.
+
+3. What is algorithm?
+Algorithm is a step by step procedure, which defines a set of instructions to be executed in certain order to get the desired output.
+
+4. Why we need to do algorithm analysis?
+A problem can be solved in more than one ways. So, many solution algorithms can be derived for a given problem. 
+We analyze available algorithms to find and implement the best suitable algorithm
+
+5. What are the criteria of algorithm analysis?
+An algorithm are generally analyzed on two factors − time and space. That is, how much execution time and how much extra space required by the algorithm.
