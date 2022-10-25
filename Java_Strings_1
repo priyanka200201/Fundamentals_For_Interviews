@@ -1,0 +1,36 @@
+1. How to declare a string in Java?
+
+String declaration in Java can be done in two ways:
+By string literal: Double quotes are used to create Java String literals. 
+Example: String str= "Scaler";  
+By new keyword: Keyword "new" is used to create a Java string.
+Example: String str=new String ("Scaler");
+
+
+2. Is String a primitive or derived type in Java?
+
+Strings are derived data types. Strings are Java objects that represent sequences of characters. 
+String objects are created using the java.lang.String class. 
+There are many functions that need to be called upon when processing a string, 
+such as substring(), indexof(), equals(), toUppercase(), etc, which primitives types do not have.
+
+
+3. State the difference between String in C and String in Java.
+String in C: In C, strings are just arrays of characters, and they are terminated with a /0, which is why we commonly refer to them as "null-terminated".
+Strings in C, like "abc$%", actually consist of 6 characters 'a' 'b' 'c' '$' '%' and '/0', but these can be easily manipulated.
+
+String in Java: Java treats Strings as objects, not arrays. String objects are created using the java.lang.String class.
+String objects in Java are immutable; you cannot modify their contents. This means whenever we manipulate a String object, the new String is created rather than the original string being modified.
+
+
+4. Is String immutable or final in Java? If so, then what are the benefits of Strings being Immutable?
+Yes, Strings are immutable in Java. Immutable objects mean they can't be changed or altered once they've been created. 
+However, we can only modify the reference to the string object.
+The String is immutable in Java because of many reasons like security, caching, synchronization and concurrency, and class loading.
+
+
+5. Explain String pool in Java.
+String Pool, also known as SCP (String Constant Pool), is a special storage space in Java heap memory that is used to store unique string objects.
+
+
+
