@@ -1,0 +1,97 @@
+What will be the output of following program?
+
+Code 1:
+public class prg {
+    public static void main(String[] args) {
+        System.out.print("Hello");
+        System.out.println("Guys!");
+    }
+}
+a. HelloGuys!
+b. Hello Guys!
+c. Hello
+  Guys!
+e. Compile with a Warning
+
+Answer:
+a. HelloGuys!
+System.out.print() does not print new line after printing string, while System.out.println();
+prints new line after printing string. Hence output will be HelloGuys! and then new line.
+
+
+Code 2:
+public class Prg {
+    public static void main(String[] args) {
+        char [] str={'i','n','c','l','u','d','e','h','e','l','p'};
+        System.out.println(str.toString());
+    }
+}
+a. includehelp
+b. Error
+d. [C@19e0bfd (Memory Address)
+e. NULL
+
+Answer:
+c. [C@19e0bfd (Meory Address)
+
+str is a character array, if you try to print str.toString() it will not converted to string 
+because str is an object of character array that will print an address in string format.
+
+
+Code 3:
+public class Prg {
+    public static void main(String args[]){
+        System.out.print(20+ 1.34f + "A" + "B");
+    }
+}
+a. 201.34AB
+b. 201.34fAB
+c. 21.34AB
+d. Error
+
+Answer:
+c. 21.34AB
+20 and 1.34f will be added and then 21.34 will be concatenated with “A” and “B”, hence output will be 21.34AB.
+
+
+Code 4:
+public class prg {
+    public static void main(String[] args) {
+        char a=0x41;    //Unicode of 'A'
+        char b=0x42;    //Unicode of 'B'
+         
+        System.out.print(a+"" + b+"");
+        System.out.print("-");
+        System.out.print(a+b);       
+    }
+}
+a. AB-AB
+b. AB-131
+c. AB-ERROR
+d. A B -131
+
+Answer:
+b. AB-131
+
+a+"" and b+"" will be converted into string, .toString() or +"" after variable or value converts value into the string and a+b will be added 
+because they are not converted into string. Hence output will be AB-131.
+
+
+Code 5:
+class Prg
+{
+    public static void main(String args[])
+    {
+        const int a=10;
+        System.out.println(a);
+    }
+}
+a. 10
+b. a
+c. Unprintable Character
+d. Error
+
+Answer:
+d. Error
+illegal start of expression.
+JAVA does not support the const keyword, instead of const, final keyword is used.
