@@ -1,0 +1,54 @@
+Question 1: Explain different languages present in DBMS.
+Answer:
+Following are various languages present in DBMS:
+
+1. DDL(Data Definition Language):  It contains commands which are required to define the database.
+E.g., CREATE, ALTER, DROP, TRUNCATE, RENAME, etc.
+2. DML(Data Manipulation Language): It contains commands which are required to manipulate the data present in the database.
+E.g., SELECT, UPDATE, INSERT, DELETE, etc.
+3. DCL(Data Control Language):  It contains commands which are required to deal with the user permissions and controls of the database system.
+E.g., GRANT and REVOKE.
+4. TCL(Transaction Control Language):  It contains commands which are required to deal with the transaction of the database.
+E.g., COMMIT, ROLLBACK, and SAVEPOINT.
+
+
+Question 2: What is meant by ACID properties in DBMS?
+Answer:
+ACID stands for Atomicity, Consistency, Isolation, and Durability in a DBMS these are those properties that ensure a safe and 
+secure way of sharing data among multiple users.
+
+1. Atomicity: This property reflects the concept of either executing the whole query or executing nothing at all,
+which implies that if an update occurs in a database then that update should either be reflected in the whole database or should not be reflected at all.
+
+2. Consistency: This property ensures that the data remains consistent before and after a transaction in a database.
+
+3. Isolation: This property ensures that each transaction is occurring independently of the others. 
+This implies that the state of an ongoing transaction doesn’t affect the state of another ongoing transaction.
+
+4. Durability: This property ensures that the data is not lost in cases of a system failure or restart and is present in the same state 
+as it was before the system failure or restart.
+
+
+Question 3: Are NULL values in a database the same as that of blank space or zero?
+Answer:
+No, a NULL value is very different from that of zero and blank space as it represents a value that is assigned, unknown, unavailable,
+or not applicable as compared to blank space which represents a character and zero represents a number.
+
+Example: NULL value in “number_of_courses” taken by a student represents that its value is unknown whereas 0 in it means that the student hasn’t taken any courses.
+
+
+Question 4: Explain the terms Entity, Entity Type, and Entity Set in DBMS.
+Answer:
+1.Entity: An entity is defined as a real-world object having attributes that represent characteristics of that particular object. 
+For example, a student, an employee, or a teacher represents an entity.
+2.Entity Type: An entity type is defined as a collection of entities that have the same attributes.
+One or more related tables in a database represent an entity type. Entity type or attributes can be understood as a characteristic which uniquely identifies the entity.
+For example, a student represents an entity that has attributes such as student_id, student_name, etc.
+3.Entity Set: An entity set can be defined as a set of all the entities present in a specific entity type in a database. 
+For example, a set of all the students, employees, teachers, etc. represent an entity set
+
+
+Question 5: What is meant by an entity-relationship (E-R) model?
+Answer:
+An entity-relationship model is a diagrammatic approach to a database design where real-world objects are represented as entities 
+and relationships between them are mentioned.
