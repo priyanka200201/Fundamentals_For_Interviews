@@ -1,0 +1,48 @@
+QUESTION 1: Describe the types of Data Structures?
+ANSWER:
+Linear Data Structure: A data structure that includes data elements arranged sequentially or linearly, 
+where each element is connected to its previous and next nearest elements, is referred to as a linear data structure.
+Arrays and linked lists are two examples of linear data structures.
+
+Non-Linear Data Structure: Non-linear data structures are data structures in which data elements are not arranged linearly or sequentially.
+We cannot walk through all elements in one pass in a non-linear data structure, as in a linear data structure.
+Trees and graphs are two examples of non-linear data structures.
+
+
+QUESTION 2: What is a stack data structure? What are the applications of stack?
+ANSWER:
+A stack is a data structure that is used to represent the state of an application at a particular point in time.
+The stack consists of a series of items that are added to the top of the stack and then removed from the top. 
+It is a linear data structure that follows a particular order in which operations are performed. LIFO (Last In First Out) or FILO (First In Last Out) are two possible orders.
+A stack consists of a sequence of items. 
+
+QUESTION 3: What are different operations available in stack data structure?
+Answer:
+Some of the main operations provided in the stack data structure are: 
+
+push: This adds an item to the top of the stack. The overflow condition occurs if the stack is full.
+pop: This removes the top item of the stack. Underflow condition occurs if the stack is empty.
+top: This returns the top item from the stack.
+isEmpty: This returns true if the stack is empty else false.
+size:  This returns the size of the stack.
+
+
+QUESTION 4: What is a queue data structure? What are the applications of queue?
+ANSWER:
+A queue is a linear data structure that allows users to store items in a list in a systematic manner. 
+The items are added to the queue at the rear end until they are full, at which point they are removed from the queue from the front.
+Queues are commonly used in situations where the users want to hold items for a long period of time, such as during a checkout process.
+
+
+QUESTION 5: What are different operations available in queue data structure?
+ANSWER:
+enqueue: This adds an element to the rear end of the queue.  Overflow conditions occur if the queue is full.
+dequeue: This removes an element from the front end of the queue. Underflow conditions occur if the queue is empty.
+isEmpty: This returns true if the queue is empty or else false.
+rear: This returns the rear end element without removing it.
+front: This returns the front-end element without removing it.
+size: This returns the size of the queue.
+
+
+
+
