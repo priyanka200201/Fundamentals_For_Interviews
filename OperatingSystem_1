@@ -1,0 +1,56 @@
+1. What is an operating system?
+
+The operating system is a software program that facilitates computer hardware to communicate and operate with the computer software. 
+It is the most important part of a computer system without it computer is just like a box.
+
+
+2. What is the main purpose of an operating system?
+There are two main purposes of an operating system:
+
+It is designed to make sure that a computer system performs well by managing its computational activities.
+It provides an environment for the development and execution of programs.
+
+
+3. What are the different operating systems?
+Batched operating systems
+Distributed operating systems
+Timesharing operating systems
+Multi-programmed operating systems
+Real-time operating systems
+
+
+4. What is a socket?
+A socket is used to make connection between two applications. Endpoints of the connection are called socket.
+
+
+5. What is a real-time system?
+Real-time system is used in the case when rigid-time requirements have been placed on the operation of a processor.
+It contains a well defined and fixed time constraints.
+
+
+6. What is kernel?
+Kernel is the core and most important part of a computer operating system which provides basic services for all parts of the OS.
+
+
+7. What is monolithic kernel?
+A monolithic kernel is a kernel which includes all operating system code is in single executable image.
+
+
+8. What do you mean by a process?
+An executing program is known as process. There are two types of processes:
+a. Operating System Processes
+b. User Processes
+
+
+9. What are the different states of a process?
+A list of different states of process:
+
+New Process
+Running Process
+Waiting Process
+Ready Process
+Terminated Process
+
+10. What is the difference between process and program?
+A program while running or executing is known as a process.
+
