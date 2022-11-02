@@ -1,0 +1,43 @@
+QUESTION 1: Can the sizeof operator be used to tell the size of an array passed to a function?
+ANSWER:
+Passing an array as a parameter in C or C++ does not pass information about how many elements there are in the array.
+Although sizeof() can tell you the size of the pointer and the size of the type it points to, it cannot tell you how many bytes are occupied by the entire array.
+
+
+QUESTION 2:We know that Arrays are objects so why cannot we write strArray.length()?
+ANSWER:
+We cannot write strArray.length() because length is not a method, it's a data item of an array.
+We can use the methods of Object like toString() and hashCode() against Array. 
+
+
+QUESTION 3: What is the difference between length and length () in Java?
+ANSWER:
+In Java, the length() is a method of String class whereas length is an instance variable of an array.
+
+length in Java
+The length variable returns the length of an array i.e. a number of elements present in an array.
+After initializing, the length of an array cannot be changed, so the length variable can directly be used to get the length of an array.
+It is used only for an array.
+
+length() in Java
+It is a static method of String class.
+The length() returns the number of characters stored in a string object.
+The string class uses this method as the length of a string can be modified using the various operations performed on a string object.
+The String class uses a char[] array internally.
+
+
+QUESTION 4: Why is the complexity of fetching from an Array be O(1)?
+ANSWER:
+In an Array, objects are stored in continuous memory location. So, if you know the address of the base object then you will be able to find the address of the ith object.
+
+address(a[i]) = address(a[0]) + i*size(object)
+This term is independent of n, so the time complexity of fetching from an Array is O(1)
+
+
+QUESTION 5: How do you find the missing integer in an array of range 1 to 100?
+ANSWER:
+During an interview, this question is often used to assess your knowledge of how programmers may manipulate or troubleshoot arrays. 
+As the answer may depend on the exact elements or structure of the array, this question may also display your problem-solving abilities. 
+In addition to showing your flexibility and extensive knowledge, providing solutions to all situations can also impress the interviewer.
+A missing integer can be found by calculating the sum of the series using this function: n (n + 1) / 2
+This function will work only if the array doesn't contain any duplicates or is missing more than one number. If an array contains duplicate elements, you can sort the array and determine whether there are two equal elements.
