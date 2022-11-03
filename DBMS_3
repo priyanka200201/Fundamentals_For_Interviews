@@ -1,0 +1,40 @@
+QUESTION 1: What are the advantages of DBMS?
+ANSWER:
+a.Redundancy control
+b.Restriction for unauthorized access
+c.Provides multiple user interfaces
+d.Provides backup and recovery
+e.Enforces integrity constraints
+f.Ensure data consistency
+g.Easy accessibility
+h.Easy data extraction and data processing due to the use of queries
+
+
+QUESTION 2: What is a checkpoint in DBMS?
+ANSWER:
+The Checkpoint is a type of mechanism where all the previous logs are removed from the system and permanently stored in the storage disk.
+Checkpoints are those points to which the database engine can recover after a crash as a specified minimal point from where the transaction log record can be used 
+to recover all the committed data up to the point of the crash.
+
+
+QUESTION 3: When does checkpoint occur in DBMS?
+ANSWER:
+A checkpoint is like a snapshot of the DBMS state. Using checkpoints,
+the DBMS can reduce the amount of work to be done during a restart in the event of subsequent crashes. 
+Checkpoints are used for the recovery of the database after the system crash. Checkpoints are used in the log-based recovery system.
+When due to a system crash we need to restart the system then at that point we use checkpoints. So that, we don't have to perform the transactions from the very starting.
+
+
+QUESTION 4: What do you mean by transparent DBMS?
+ANSWER:
+The transparent DBMS is a type of DBMS which keeps its physical structure hidden from users.
+Physical structure or physical storage structure implies to the memory manager of the DBMS, and it describes how the data stored on disk.
+
+
+QUESTION 5: What are the unary operations in Relational Algebra?
+ANSWER:
+PROJECTION and SELECTION are the unary operations in relational algebra. Unary operations are those operations which use single operands. 
+Unary operations are SELECTION, PROJECTION, and RENAME.
+
+As in SELECTION relational operators are used for example - =,<=,>=, etc.
+
