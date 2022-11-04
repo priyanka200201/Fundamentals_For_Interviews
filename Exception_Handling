@@ -1,0 +1,84 @@
+1. What is an Exception?
+Answer:
+An exception is an unwanted or unexpected event, which occurs during the execution of a program i.e at run time, 
+that disrupts the normal flow of the program’s instructions.
+
+Error vs Exception
+Error: An Error indicates a serious problem that a reasonable application should not try to catch.
+Exception: Exception indicates conditions that a reasonable application might try to catch.
+
+
+2. How Programmer handles an exception?
+Answer:
+Customized Exception Handling: Java exception handling is managed via five keywords: try, catch, throw, throws, and finally.
+
+
+3.  Does finally block always get executed in the java program?
+Answer:
+This question is very important. finally block is always executed but there is one scenario when finally block does not execute.
+By using System.exit(0) in the try or catch block, results in finally block does not execute. The reason is System.exit(0) line terminates the
+running java virtual machine. Termination leads to no more execution of the program.
+
+
+4. Are we allowed to use only try block without a catch and finally blocks?
+Answer:
+Prior to Java 7:
+No, it is not allowed. If used it shows compilation error. The try block must be followed by a catch block or finally block.
+
+After Java 7 (Correct Answer):
+Yes, it is possible to have a try block without a catch and finally blocks. The introduction of try-with-resources concept makes it possible.
+The only constraint is resources which we are passing as a parameter in try block must implement AutoCloseable interface.
+
+
+5. What are Checked and Unchecked exceptions in java?
+Answer:
+Exceptions which are known to the compiler are called Checked exceptions. Checked exceptions are checked at compile-time only.
+Unchecked exceptions occur only at run time. Unchecked exceptions are also called as run time exceptions.
+All subclasses of java.lang.RuntimeException and java.lang.Error is of Unchecked type.
+
+
+6. What is the difference between final, finally and finalize in java?
+Answer:
+final keyword:
+By declaring a variable as final, the value of final variable cannot be changed.
+By declaring a method as final, method cannot be overridden.
+By declaring a class as final, class cannot be extended.
+
+finally:
+Used after try or try-catch block, will get executed after the try and catch blocks without considering whether an exception is thrown or not.
+
+finalize:
+Finalize method is the method that Garbage Collector always calls just before the deletion/destroying the object which is no longer in use in the code.
+
+
+7. What is RuntimeException in java. Give example?
+Answer:
+The exceptions which occur at runtime are called as RuntimeException. These exceptions are unknown to the compiler. 
+All subclasses of java.lang.RuntimeException are RuntimeExceptions.
+
+For example:
+NumberFormatException, NullPointerException, ClassCastException, ArrayIndexOutOfBoundException  etc.
+
+
+8. What is the difference between ClassNotFoundException and NoClassDefFoundError in java?
+Answer:
+This question is important because very few Java developers are aware of the difference between ClassNotFoundException and NoClassDefFoundError.
+
+ClassNotFoundException:
+An exception that occurs when you try to load a class at run time using Class.forName() or loadClass() methods and mentioned classes are not found in the classpath 
+is called ClassNotFoundException.
+
+NoClassDefFoundError:
+An exception that occurs when a particular class is present at compile-time but was missing at run time is called NoClassDefFoundError.
+
+
+9. Can we throw an exception manually/explicitly?
+Answer:
+Yes, using throw keyword we can throw an exception manually.
+Syntax:
+throw InstanceOfThrowableType;
+
+
+10.  What is the use of throws keyword in java?
+Answer:
+throws keyword is used to declare an exception.
