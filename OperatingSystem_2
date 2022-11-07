@@ -1,0 +1,56 @@
+Question 1: What is Batch Processing OS ?
+
+Answer: In Batch Processing OS, operator collects th job from programmmers and seperate them on the basis of jobs, hence makes batches of similar types of jobs. 
+
+
+Question 2: Give main advantage of Batch Processing OS ?
+
+Answer: Increased Performance : It is possible to start a new job, as soon as previous job gets executed.
+
+
+Question 3: Give main disadvantage of Batch Processing OS ? 
+
+Answer: Larger Turn Around Time.
+Job can enter infinite loop.
+
+
+Question 4: What is Spooling ?
+
+Answer: Spooling refers to Simultaneous Peripheral Operations Online. It is the process of putting jobs in a buffer ( special area of memory ),
+where a device can access them when it is ready. 
+
+
+Question 5: Why Spooling is useful ?
+
+Answer: We know that different devices access data at different rates. Buffer provides a waiting station where data can rest while slow devices catch up.
+
+
+Question 6: Explain the process of Multi-programming ?
+
+A. When two or more programs are in memory at the same time, sharing the processor, is referred to as Multiprogramming. 
+It increases CPU utilization by organizing jobs. Multiprogramming system provides an environment where various system resources are utilized efficiently. 
+
+
+Question 7: Give main disadvantage of Multi-programming Systems ? 
+
+A. 1. Memory Management is required.
+2. CPU Scheduling is required.
+
+
+Question 8: What are Multi Tasking OS ?
+
+Answer : In multitasking os, multiple program can be at running state at same time. OS determines which applications should run in what order.
+
+
+Question 9: What do you understand by term, ” Time Sharing ” ?
+
+A. Time Sharing is a technique which enables many people, located at various terminals, to use a particular system at the same time.
+
+
+Question 10: Explain real time operating system ?
+
+Answer: A real-time operating system is an operating system intended to serve real-time applications that process data as it comes in, typically without buffer delays.
+
+They are of two types : 
+Hard RTOS – restrictive
+Soft RTOS – less restrictive
