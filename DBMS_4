@@ -1,0 +1,45 @@
+1. What are the different levels of abstraction in the DBMS?
+Answer:
+There are three levels of data abstraction in DBMS. They are:
+Physical Level: It is the lowest level of abstraction and describes how the data is stored.
+Logical Level: This is the next level of abstraction after the Physical level. This layer determines what data is stored in the database, and what is the relationship between the data points.
+View Level: The View Level is the highest level of abstraction and it describes only a part of the entire database.
+
+
+2. What is an entity-relationship model?
+Answer:
+It is a diagrammatic approach to database design, where you represent real-world objects as entities and mention relationships between them.
+This approach helps the team of DBAs’ to understand the schema easily.
+
+
+3. What are relationships and mention different types of relationships in the DBMS
+ Answer:
+A relationship in DBMS is the scenario where two entities are related to each other. In such a scenario, the table consisting of foreign key references
+to that of a primary key of the other table.
+
+The different types of relationships in DBMS are as follows:
+
+One-to-One Relationship –  Used when a single row in Table A is related to a single row in Table B.
+One-to-Many Relationship – Used when a single row in Table A is related to many rows in table B.
+Many-to-Many Relationship – Used when many rows in table A can be related to many rows in table B.
+Self -Referencing Relationship – Used when a record in table A is related to the same table itself.
+
+
+4. What is normalization and what are the different types of normalization?
+Answer:
+The process of organizing data to avoid any duplication of data and redundancy is known as Normalization. 
+There are many successive levels of normalization which are known as normal forms. Each consecutive normal form depends on the previous one.
+The following are the first three normal forms. Apart from these, you have higher normal forms such as BCNF. 
+
+First Normal Form (1NF) – No repeating groups within rows
+Second Normal Form (2NF) – Every non-key (supporting) column value is dependent on the whole primary key.
+Third Normal Form (3NF) – Dependent solely on the primary key and no other non-key (supporting) column value.
+
+
+5. What do you understand by correlated subqueries in DBMS?
+Answer:
+A correlated subquery is also a sort of subquery reliant on another query. So, when subqueries are executed for each of the rows of outer queries,
+then they are termed as correlated subqueries. Each subquery is executed a single time for every row of the outer query.
+
+We can also understand correlated subqueries as those queries, which are used for row-by-row processing by the parent statement. 
+Here, the parent statement can be SELECT, UPDATE or DELETE statement.
