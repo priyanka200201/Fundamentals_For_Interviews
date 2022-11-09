@@ -1,0 +1,77 @@
+QUESTION 1. Explain Linked List in short.
+ANSWER:
+A linked list may be defined as a linear data structure which can store a collection of items.
+In another way, the linked list can be utilized to store various objects of similar types. 
+Each element or unit of the list is indicated as a node. Each node contains its data and the address of the next node. 
+It is similar to a chain. Linked lists are used to create graphs and trees.
+
+
+QUESTION 2:How many types of Linked List exist?
+ANSWER:
+There are multiple types of Linked Lists available:
+
+Singly Linked List
+Doubly Linked List
+Multiply Linked List
+Circular Linked List
+
+
+QUESTION 3: Explain Singly Linked List in short.
+ANSWER:
+The singly linked list includes nodes which contain a data field and next field. The next field further points to the next node in the line of nodes.
+In other words, the nodes in singly linked lists contain a pointer to the next node in the list.
+We can perform operations like insertion, deletion, and traversal in singly linked lists.
+
+
+QUESTION 4: What do you understand by Doubly Linked List?
+ANSWER:
+The doubly linked list includes a pointer (link) to the next node as well as to the previous node in the list.
+The two links between the nodes may be called "forward" and "backward, "or "next" and "prev (previous)."
+A doubly linked list is shown below whose nodes consist of three fields: an integer value,
+a link that points to the next node, and a link that points to the previous node.
+
+
+QUESTION 5: Explain Multiply Linked List in short.
+ANSWER:
+In a multiply linked list, each node consists of two or more link fields. Each field is used to join the same set of records in a different order of the same set,
+e.g. "by name, by date of birth, by the department, etc.".
+
+
+ QUESTION 6: How many pointers are necessary to implement a simple Linked List?
+ ANSWER:
+There are generally three types of pointers required to implement a simple linked list:
+A 'head' pointer which is used for pointing to the start of the record in a list.
+A 'tail' pointer which is used for pointing to the last node. The key factor in the last node is that its subsequent pointer points to nothing (NULL).
+A pointer in every node which is used for pointing to the next node element.
+
+
+QUESTION 7: Which type of memory allocation is referred for Linked List?
+ANSWER:
+Dynamic memory allocation is referred for Linked List.
+
+
+QUESTION 8: What do you know about traversal in linked lists?
+ANSWER:
+The term 'traversal' refers to the operation of processing each element present in the list.
+
+
+QUESTION 9: What are the main differences between the Linked List and Linear Array?
+ANSWER:
+LINKED LIST
+a. Deletion and insertion are easy.
+b. The linked list doesn't require movement of nodes while performing deletion and insertion.
+c. In the Linked List, space is not wasted.Linked List is not expensive.
+d. It has an option to be extended or reduced as per the requirements.
+
+LINEAR ARRAY
+a. Deletion and insertion are tough.
+b. Linear Array requires movement of nodes while performing deletion and insertion.
+c. In Linear Array, space is wasted. Linear Array is a bit expensive.
+d. It cannot be reduced or extended.
+
+
+QUESTION 10: Mention a few applications of Linked Lists?
+ANSWER:
+Few of the main applications of Linked Lists are:
+Linked Lists let us implement queues, stacks, graphs, etc.
+Linked Lists let us insert elements at the beginning and end of the list.
