@@ -1,0 +1,67 @@
+QUESTION 1: What does the string intern() method do in Java?
+ANSWER:
+If you apply the intern() method to a few strings, you will ensure that all strings having the same content share the same memory. 
+As soon as a String object is invoked with intern(), it first checks if the string value of the String object is already present in the string pool and if it is available,
+then the reference to that string from the string constant pool is returned. If not, a new string object is added to the string pool, and a reference to it is returned.
+
+Example:
+String str1 = new String("Scaler by InterviewBit").intern();  //Line1  
+String str2 = new String("Scaler by InterviewBit").intern(); //Line2
+
+
+QUESTION 2: State the difference between String and StringBuffer.
+ANSWER:
+String objects in Java are immutable and final, so we can't change their value after they are created. Since strings are commonly used in applications, 
+we need to perform several operations on them such as substring(), equals(), indexof(), toUppercase(), etc. Each time we manipulate a string,
+a new String object is created, and all previous objects will be garbage, placing a strain on the garbage collector. This is why The Java team developed StringBuffer.
+A StringBuffer is a mutable object, meaning it can be changed, but the string is an immutable object, so it cannot be changed once it has been created.
+
+
+QUESTION 3: State the difference between StringBuffer and StringBuilder in Java.
+ANSWER:
+StringBuffer and StringBuilder are two Java classes for manipulating strings. These are mutable objects, i.e., they can be modified, and provide various methods 
+such as insert(), substring(), delete(), and append(), for String manipulation.
+
+StringBuffer: The StringBuffer class was created by the Java Team when they realized the need for an editable string object. 
+Nevertheless, StringBuffer has all methods synchronized, meaning they are thread-safe. Therefore, StringBuffer allows only one thread to access a method at once, 
+so it is not possible to call StringBuffer methods from two threads simultaneously, which means it takes more time to access.
+Syntax:
+StringBuffer var = new StringBuffer(str);
+
+StringBuilder: It was at that point that the Java Team realized that making all methods of StringBuffer synchronized wasn't the best idea, which led them to introduce
+StringBuilder. The StringBuilder class has no synchronized methods. Unlike StringBuffer, StringBuilder does not offer synchronized methods, 
+which makes it less thread-safe, faster, and more efficient. StringBuilder was introduced in Java 1.5 in response to StringBuffer's shortcomings.
+Syntax: 
+StringBuilder var = new StringBuilder(str);
+
+
+QUESTION 4: In Java, how can two strings be compared?
+ANSWER:
+1.String Equals Method: In this method, the strings are compared based on the values within them. If the values of the two strings are the same, 
+it returns true; otherwise, it returns false. This method is case-sensitive.
+Syntax: str1.equals(str2);
+
+2.String Equals Ignore Case: By using this method, the two strings are compared without taking into account the case (upper or lower). 
+It returns true if the two values are the same and not null.
+Syntax:
+str1.equalsIgnoreCase(str2);
+
+3.Object Equals Method: The method returns true if its arguments are equal, otherwise, it returns false.
+Accordingly, if both arguments are null, the result is true, and if just one argument is null, the result is false.
+Syntax: 
+Object.equals(str1, str2)
+
+4. String Compare To Method: This method compares input strings with each other. Upon comparison, the following value is returned:
+If (str1>str2), a positive value is returned.
+If (str1==str2), 0 is returned.
+If (str1<str2), a negative value is returned.
+Syntax:
+str1.compareTo(str2)
+
+
+QUESTION 5: What is the difference between str1 == str2 and str1.equals(str2)?
+ANSWER:
+Java offers both the equals() method and the "==" operator for comparing objects. However, here are some differences between the two:
+Essentially, equals() is a method, while == is an operator.
+The == operator can be used for comparing references (addresses) and the .equals() method can be used to compare content. 
+To put it simply, == checks if the objects point to the same memory location, whereas .equals() compares the values of the objects.
