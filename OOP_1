@@ -1,0 +1,109 @@
+1) What do you understand by OOP?
+
+OOP stands for object-oriented programming. It is a programming paradigm that revolves around the object rather than function and procedure.
+In other words, it is an approach for developing applications that emphasize on objects. An object is a real word entity that contains data and code. 
+It allows binding data and code together.
+
+
+2) Name any seven widely used OOP languages.
+
+There are various OOP languages but the most widely used are:
+Python
+Java
+Go
+Dart
+C++
+C#
+Ruby
+
+
+3) What is the purpose of using OOPs concepts?
+The aim of OOP is to implement real-world entities like inheritance, hiding, polymorphism in programming. 
+The main purpose of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+
+
+4) What are the four main features of OOPs?
+
+The OOP has the following four features:
+
+Inheritance
+Encapsulation
+Polymorphism
+Data Abstraction
+
+
+5) Why OOP is so popular?
+
+OOPs, programming paradigm is considered as a better style of programming. Not only it helps in writing a complex piece of code easily,
+ but it also allows users to handle and maintain them easily as well. Not only that, the main pillar of OOPs - Data Abstraction, Encapsulation, Inheritance,
+ and Polymorphism, makes it easy for programmers to solve complex scenarios. As a result of these, OOPs is so popular.
+
+
+6) What are the advantages and disadvantages of OOP?
+
+Advantages of OOP:
+It follows a bottom-up approach.
+It models the real word well.
+It allows us the reusability of code.
+Avoids unnecessary data exposure to the user by using the abstraction.
+OOP forces the designers to have a long and extensive design phase that results in better design and fewer flaws.
+Decompose a complex problem into smaller chunks.
+Programmer are able to reach their goals faster.
+Minimizes the complexity.
+Easy redesign and extension of code that does not affect the other functionality.
+
+Disadvantages of OOP:
+Proper planning is required.
+Program design is tricky.
+Programmer should be well skilled.
+Classes tend to be overly generalized.
+
+
+7) What are the limitations of OOPs?
+
+Requires intensive testing processes.
+Solving problems takes more time as compared to Procedure Oriented Programming.
+The size of the programs created using this approach may become larger than the programs written using the procedure-oriented programming approach.
+Software developed using this approach requires a substantial amount of pre-work and planning.
+OOP code is difficult to understand if you do not have the corresponding class documentation.
+In certain scenarios, these programs can consume a large amount of memory.
+Not suitable for small problems.
+Takes more time to solve problems.
+
+
+8)What do you understand by pure object-oriented language?
+
+The programming language is called pure object-oriented language that treats everything inside the program as an object. 
+The primitive types are not supported by the pure OOPs language. There are some other features that must satisfy by a pure object-oriented language:
+
+Encapsulation
+Inheritance
+Polymorphism
+Abstraction
+All predefined types are objects
+All user-defined types are objects
+All operations performed on objects must be only through methods exposed to the objects.
+
+
+9) What do you understand by class and object? Also, give example.
+Class: A class is a blueprint or template of an object. It is a user-defined data type. Inside a class, we define variables, constants, member functions, 
+and other functionality. It does not consume memory at run time. Note that classes are not considered as a data structure. It is a logical entity.
+It is the best example of data binding.
+
+Object: An object is a real-world entity that has attributes, behavior, and properties. It is referred to as an instance of the class. 
+It contains member functions, variables that we have defined in the class. It occupies space in the memory. 
+Different objects have different states or attributes, and behaviors.
+
+
+10) What are the differences between class and object?
+
+Class	                                                                                                        Object
+It is a logical entity.	                                                                             It is a real-world entity.
+It is conceptual.                            	                                                       It is real.
+It binds data and methods together into a single unit.	                                             It is just like a variable of a class.
+It does not occupy space in the memory.	                                                             It occupies space in the memory.
+It is a data type that represents the blueprint of an object.	                                       It is an instance of the class.
+It is declared once.	                                                                               Multiple objects can be declared as and when required.
+It uses the keyword class when declared.	                                                           It uses the new keyword to create an object.
+A class can exist without any object.	                                                               Objects cannot exist without a class.
+
