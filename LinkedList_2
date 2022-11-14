@@ -1,0 +1,79 @@
+1. Explain Multiply Linked List in short.
+
+In a multiply linked list, each node consists of two or more link fields. 
+Each field is used to join the same set of records in a different order of the same set, e.g. "by name, by date of birth, by the department, etc.".
+
+
+2. How can you represent a linked list node?
+
+The simplest method to represent a linked list node is wrapping the data and the link using typedef structure. 
+Then further assigning the structure as a Node pointer that points to the next node.
+
+
+3. How can you insert a node to the beginning of a singly linked list?
+
+To insert the node to the beginning of the list, we need to follow these steps:
+
+Create a new node
+Insert new node by assigning the head pointer to the new node's next pointer
+Update the head pointer to point the new node
+Node *head;  
+voidInsertNodeAtFront(int data)  
+{  
+/* 1. create the new node*/  
+Node *temp = new Node;  
+temp->datadata = data;  
+/* 2. insert it at the first position*/  
+temp->next = head;  
+/* 3. update head to point to this new node*/  
+head = temp;  
+}  
+
+
+4. How can someone add an item to the beginning of the list?
+
+Adding an item to the beginning of the list, we need to follow the given steps:
+
+Create a new item and set up its value.
+Link the newly created item pointing to the head of the list.
+Set up the head of the list as our new item.
+
+
+5. How can someone insert a node at the end of Linked List?
+
+This case is a little bit difficult as it depends upon the type of implementation. If we have a tail pointer, then it is simple. 
+In case we do not have a tail pointer, we will have to traverse the list until we reach to the end (i.e., the next pointer is NULL).
+Then we need to create a new node and make that last node?s next pointer point to the new node.
+
+voidInsertNodeAtEnd(int data)  
+{  
+   /* 1. create the new node*/  
+    Node *temp = new Node;  
+temp->datadata = data;  
+temp->next = NULL;  
+    /* check if the list is empty*/  
+if (head == NULL)  
+    {  
+head = temp;  
+return;  
+    }  
+else  
+    {  
+        /* 2. traverse the list till the end */  
+        Node *traveler = head;  
+while (traveler->next != NULL)  
+travelertraveler = traveler->next;  
+        /* 3. Set up the last node to point to this new node*/  
+traveler->next = temp;  
+    }  
+}  
+
+
+6. How can someone insert a node in a random location of the Linked List?
+
+If we want to insert a node in the first position or an empty list, we can insert the node easily. Otherwise, we need to traverse the list until we reach the 
+specified position or at the end of the list. Then we can insert a new node. Inserting a node in the middle position is a little bit difficult as we have to make
+sure that we perform the pointer assignment in the correct order. To insert a new node in the middle, follow the steps:
+
+First, we need to set the new node's next pointer to that node which is present before it.
+Then we are required to assign a previous node's next pointer to the starting position of the new node.
