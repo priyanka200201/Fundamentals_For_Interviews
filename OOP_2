@@ -1,0 +1,24 @@
+1.  How much memory does a class occupy?
+Classes do not consume any memory. They are just a blueprint based on which objects are created.
+Now when objects are created, they actually initialize the class members and methods and therefore consume memory.
+
+
+2. Is it always necessary to create objects from class?
+No. An object is necessary to be created if the base class has non-static methods. But if the class has static methods, 
+then objects don’t need to be created. You can call the class method directly in this case, using the class name.
+
+
+3. What is a copy constructor?
+Copy Constructor is a type of constructor, whose purpose is to copy an object to another. What it means is that a copy constructor will clone an object and
+its values, into another object, is provided that both the objects are of the same class.
+
+
+4. What is a destructor?
+Contrary to constructors, which initialize objects and specify space for them, Destructors are also special methods. But destructors free up the resources and 
+memory occupied by an object. Destructors are automatically called when an object is being destroyed. 
+
+
+5. Are class and structure the same? If not, what's the difference between a class and a structure?
+No, class and structure are not the same. Though they appear to be similar, they have differences that make them apart. 
+For example, the structure is saved in the stack memory, whereas the class is saved in the heap memory. 
+Also, Data Abstraction cannot be achieved with the help of structure, but with class, Abstraction is majorly used.
