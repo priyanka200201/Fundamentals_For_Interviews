@@ -1,0 +1,71 @@
+1. What are nodes and links?
+ANSWER:
+Node: Any communicating device in a network is called a Node. Node is the point of intersection in a network. It can send/receive data and information within a network. 
+Examples of the node can be computers, laptops, printers, servers, modems, etc.
+
+Link: A link or edge refers to the connectivity between two nodes in the network. It includes the type of connectivity (wired or wireless) between the nodes 
+and protocols used for one node to be able to communicate with the other.
+
+
+2. What is the network topology?
+ANSWER:
+Network topology is a physical layout of the network, connecting the different nodes using the links. 
+It depicts the connectivity between the computers, devices, cables, etc.
+
+
+3. Define different types of network topology
+ANSWER:
+The different types of network topology are given below:
+Bus Topology:
+All the nodes are connected using the central link known as the bus.
+It is useful to connect a smaller number of devices.
+If the main cable gets damaged, it will damage the whole network.
+
+Star Topology:
+All the nodes are connected to one single node known as the central node.
+It is more robust.
+If the central node fails the complete network is damaged.
+Easy to troubleshoot.
+Mainly used in home and office networks.
+
+Ring Topology:
+Each node is connected to exactly two nodes forming a ring structure
+If one of the nodes are damaged, it will damage the whole network
+It is used very rarely as it is expensive and hard to install and manage
+
+Mesh Topology:
+Each node is connected to one or many nodes.
+It is robust as failure in one link only disconnects that node.
+It is rarely used and installation and management are difficult.
+
+Tree Topology:
+A combination of star and bus topology also know as an extended bus topology.
+All the smaller star networks are connected to a single bus.
+If the main bus fails, the whole network is damaged.
+
+Hybrid:
+It is a combination of different topologies to form a new topology.
+It helps to ignore the drawback of a particular topology and helps to pick the strengths from other.
+
+
+4. What is an IPv4 address? What are the different classes of IPv4?
+ANSWER:
+An IP address is a 32-bit dynamic address of a node in the network. An IPv4 address has 4 octets of 8-bit each with each number with a value up to 255.
+
+IPv4 classes are differentiated based on the number of hosts it supports on the network. There are five types of IPv4 classes and are based on the first octet 
+of IP addresses which are classified as Class A, B, C, D, or E.
+
+IPv4 Class       	         IPv4 Start Address	           IPv4 End Address	          Usage
+A	                            0.0.0.0	                  127.255.255.255	     Used for Large Network
+B	                            128.0.0.0	                191.255.255.255	     Used for Medium Size Network
+C	                            192.0.0.0	                223.255.255.255	     Used for Local Area Network
+D	                            224.0.0.0	                239.255.255.255	     Reserved for Multicasting
+E                            	240.0.0.0	                255.255.255.254	     Study and R&D
+
+
+5. What are Private and Special IP addresses?
+ANSWER:
+Private Address: For each class, there are specific IPs that are reserved specifically for private use only.
+This IP address cannot be used for devices on the Internet as they are non-routable.
+
+Special Address: IP Range from 127.0.0.1 to 127.255.255.255 are network testing addresses also known as loopback addresses are the special IP address.
