@@ -1,0 +1,25 @@
+1. What is Inheritance in Java? 
+Answer: Inheritance is an Object oriented feature which allows a class to inherit behavior and data from other class.
+For example, a class Car can extend basic feature of Vehicle class by using Inheritance.
+
+
+2. What are different types of Inheritance supported by Java? 
+Answer: Java supports single Inheritance, multi-level inheritance and at some extent multiple inheritances because Java allows a class to only extend another class, 
+but an interface in Java can extend multiple inheritances.
+
+
+3. Why multiple Inheritance is not supported by Java?
+Answer: Java is introduced after C++ and Java designer didn't want to take some C++ feature which is confusing and not essential.
+They think multiple inheritances is one of them which doesn't justify complexity and confusion it introduces.
+
+
+4. Why Inheritance is used by Java Programmers? 
+Answer: Inheritance is used for code reuse and leveraging Polymorphism by creating a type hierarchy. 
+It's better to use Inheritance for type declaration but for code reuse composition is a better option because it's more flexible.
+
+
+5. How to use Inheritance in Java?
+Answer: You can use Inheritance in Java by extending classes and implementing interfaces. 
+Java provides two keywords extends and implements to achieve inheritance.
+A class which is derived from another class is known as a subclass and an interface which is derived from another interface is called subinterface.
+
