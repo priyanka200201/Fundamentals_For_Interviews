@@ -1,0 +1,36 @@
+1. What is method overriding?
+Ans : Modifying a super class method in the sub class is called method overriding. Using method overriding, we can change super class method according to the requirements of sub class.
+
+2. What are the rules to be followed while overriding a method?
+Ans : There are 5 main rules you should kept in mind while overriding a method. They are,
+
+              a) Name of the method must be same as that of super class method.
+              b) Return type of overridden method must be compatible with the method being overridden. i.e if a method has primitive type as it’s return type then it must be overridden with primitive type only and if a method has 
+                 derived type as it’s return type then it must be overridden with same type or it’s sub class types.
+              c) You must not reduce the visibility of a method while overriding.
+              d) You must not change parameter list of a method while overriding.
+              e) You can not increase the scope of exceptions while overriding a method with throws clause.
+              
+3. Can we override static methods?
+Ans : No, Static methods can not be overridden. If we try to override them they will be hidden in the sub class.
+
+4. What happens if we change the arguments of overriding method?
+Ans : If we change the arguments of overriding method, then that method will be treated as overloaded not overridden.
+
+5. Can we override protected method of super class as public method in the sub class?
+Ans : Yes. You can increase the visibility of overriding methods but can’t reduce it.
+
+6. Can we change the return type of overriding method from Number type to Integer type?
+Ans : Yes. You can change as Integer is a sub class of Number type.
+
+7. Can we override a super class method without throws clause as a method with throws clause in the sub class?
+Ans : Yes, but only with unchecked type of exceptions.
+
+8. Can we change an exception of a method with throws clause from SQLException to NumberFormatException while overriding it?
+Ans : Yes. Overridden method may throw SQLException or it’s sub class exception or any unchecked type of exceptions.
+
+9. Can we change an exception of a method with throws clause from unchecked to checked while overriding it?
+Ans : No. We can’t change an exception of a method with throws clause from unchecked to checked.
+
+10. How do you refer super class version of overridden method in the sub class?
+Ans : Uing super keyword, we can refer super class version of overridden method in the sub class.
