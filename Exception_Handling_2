@@ -1,0 +1,85 @@
+1. Is there any order in which catch block should be written?
+Answer:
+Yes, most specific exception should be written first and then generic one.
+For example:
+below code will give you compilation error.
+
+public static int exceptionTest()
+  {
+ 
+   try{
+   File f=new File("/usr/abc.txt");
+   }
+   catch(Exception e)
+   {
+ 
+   }
+   catch(IOException e) // Compilation error
+   {
+ 
+   }
+  }
+  
+  2. Predict output of below program:
+ 
+public class ExceptionTest {
+  public static void main(String[] args) {
+   System.out.println(exceptionTest());
+  }
+  public static int exceptionTest()
+  {
+   int i=6;
+   try{
+    return i;
+   }
+   catch(Exception e)
+   {
+    i=10;
+ 
+   }
+   finally
+   {
+    System.out.println("In finally block");
+   }
+   return i;
+  }
+}
+ 
+Output:
+In finally block
+6
+ 
+Explanation: 
+If you notice we have return statement in try block, so before returning from exceptionTest() method, finally block will be executed. When you have return statement 
+in try block, JVM will take note of value of i and this value will be returned by exceptionTest method.
+
+
+3. What is try-with-resources concept in java? How it differs from an ordinary try statement?
+Answer:
+According to Java docs, try-with-resources statement is a try statement that declares one or more resources. It ensures that each resource is closed at the end of
+the statement.
+
+try-with-resources statement can have catch or finally block similar to ordinary try statement. In a try-with-resources statement, JVM makes sure catch or finally
+block is run after the resources declared have been closed.
+
+
+4. Does catch block rethrow an exception in java?What is the difference between throws and throw in java?
+
+This is one of the most frequently asked interview questions for java developers.
+Main differences between throws and throw are :
+
+a. throws keyword is used when writing methods, to declare that the method in question throws the specified (checked) exception.
+throw is used when an instruction is to explicitly throw the exception.
+b.  throws is used with a method signature while the throw is used inside a method.
+Answer:
+Yes, catch block can rethrow an exception using throw keyword. It is called re-throwing an exception.
+
+
+5. What is the difference between throws and throw in java?
+Answer:
+This is one of the most frequently asked interview questions for java developers.
+Main differences between throws and throw are
+
+a. throws keyword is used when writing methods, to declare that the method in question throws the specified (checked) exception.
+throw is used when an instruction is to explicitly throw the exception.
+b.  throws is used with a method signature while the throw is used inside a method.
