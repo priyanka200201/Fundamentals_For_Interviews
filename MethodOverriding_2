@@ -1,0 +1,36 @@
+1) Can we override private methods?
+
+No question of overriding private methods. They are not at all inherited to sub class.
+
+
+2) Can we remove throws clause of a method while overriding it?
+
+Yes. We can remove throws clause of a method while overriding it.
+
+
+3) Is it possible to override non-static methods as static?
+
+No. We can’t override non-static methods as static.
+
+
+4) Can we change an exception of a method with throws clause from checked to unchecked while overriding it?
+
+Yes. We can change an exception from checked to unchecked but reverse is not possible.
+
+
+5) Can we change the number of exceptions thrown by a method with throws clause while overriding it?
+
+Yes, we can change. But, exceptions must be compatible with throws clause in the super class method.
+
+
+6)Can you prevent overriding a method without using final modifier?
+
+Yes, there are some funky ways to prevent method overriding in Java. Though final modifier is only for that purpose we can use private keyword to prevent 
+method overriding.
+
+
+7)Can we change argument list of overridden method?
+
+No, we cannot change the argument list of overridden method in Java. An overriding method must have same signature as original method.
+Only return type can be changed that to only to sub type of return type of original method.
+
