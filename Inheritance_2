@@ -1,0 +1,57 @@
+1. What is Is-A relationship in Java?
+Ans: Is-A relationship represents Inheritance. It is implemented using the “extends” keyword. It is used for code reusability.
+
+
+2. How is Inheritance implemented/achieved in Java?
+Ans: Inheritance can be implemented or achieved by using two keywords:
+extends: extends is a keyword that is used for developing the inheritance between two classes and two interfaces.
+implements: implements keyword is used for developing the inheritance between a class and interface.
+
+
+3. Are constructor and instance initialization block inherited to subclass?
+
+Ans: No, constructor and instance initialization block of the superclass cannot be inherited to its subclass but they are executed while creating 
+an object of the subclass.
+
+
+4. Are static members inherited to subclass in Java?
+Ans: Static block cannot be inherited to its subclass.
+A static method of superclass is inherited to the subclass as a static member and non-static method is inherited as a non-static member only.
+
+
+5. What are the advantages of inheritance in Java?
+Ans: The advantages of inheritance in java are as follows:
+We can minimize the length of duplicate code in an application by putting the common code in the superclass and sharing it amongst several subclasses.
+Due to reducing the length of code, the redundancy of the application is also reduced.
+Inheritance can also make application code more flexible to change.
+
+
+6. What are the types of inheritance in Java?
+Ans: The various types of inheritance are as follows:
+a. Single inheritance
+b. Multi-level inheritance
+c. Hierarchical inheritance
+d. Multiple inheritance
+e. Hybrid inheritance
+
+
+7. What happens if both superclass and subclass have a field with the same name?
+Ans: Only subclass members are accessible if an object of subclass is instantiated.
+
+
+8. Which of the following is correct way of inheriting class A by class B?
+
+a) class B + class A { }
+b) class B inherits class A { }
+c) class B extends A { }
+d) class B extends class A { }
+
+Ans: c
+
+
+9. How will you prohibit inheritance in Java?
+Ans: If you declare a class as final, it cannot be extended. Thus, we can prohibit the inheritance of that class in Java.
+
+
+10. What is the difference between Inheritance and Composition?
+Ans: Inheritance represents Is-A relationship between subclass and its superclass whereas, composition represents Has-A relationship between classes.
