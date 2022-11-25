@@ -1,0 +1,70 @@
+1. What is Thread in Java?
+Answers:
+Threads are basically the lightweight and smallest unit of processing that can be managed independently by a scheduler.
+Threads are referred to as parts of a process that simply let a program execute efficiently with other parts or threads of the process at the same time. 
+Using threads, one can perform complicated tasks in the easiest way. It is considered the simplest way to take advantage of multiple CPUs available in a machine.
+They share the common address space and are independent of each other. 
+
+
+2. What are the benefits of using Multithreading?
+Answer:
+There are various benefits of multithreading as given below:
+
+Allow the program to run continuously even if a part of it is blocked. 
+Improve performance as compared to traditional parallel programs that use multiple processes. 
+Allows to write effective programs that utilize maximum CPU time
+Improves the responsiveness of complex applications or programs. 
+Increase use of CPU resources and reduce costs of maintenance. 
+Saves time and parallelism tasks. 
+If an exception occurs in a single thread, it will not affect other threads as threads are independent. 
+Less resource-intensive than executing multiple processes at the same time. 
+
+
+3. What's the difference between thread and process?
+Answer:
+Thread: It simply refers to the smallest units of the particular process. It has the ability to execute different parts (referred to as thread) of the program 
+at the same time.  
+
+Process: It simply refers to a program that is in execution i.e., an active program. A process can be handled using PCB (Process Control Block). 
+
+
+4. What’s the difference between class lock and object lock?
+Answer:
+Class Lock: In java, each and every class has a unique lock usually referred to as a class level lock. These locks are achieved using 
+the keyword ‘static synchronized’ and can be used to make static data thread-safe. It is generally used when one wants to prevent multiple threads 
+from entering a synchronized block.
+
+Example:  
+
+public class ClassLevelLockExample  
+{    
+  public void classLevelLockMethod()  
+ {       
+     synchronized (ClassLevelLockExample.class)  
+       {         
+            //DO your stuff here       
+       }    
+ } 
+} 
+Object Lock: In java, each and every object has a unique lock usually referred to as an object-level lock. These locks are achieved using the keyword ‘synchronized’ and can be used to protect non-static data. It is generally used when one wants to synchronize a non-static method or block so that only the thread will be able to execute the code block on a given instance of the class.  
+
+Example:  
+
+public class ObjectLevelLockExample  
+{    
+  public void objectLevelLockMethod()  
+ {   
+     synchronized (this)  
+       {     
+            //DO your stuff here   
+       } 
+ }
+} 
+
+
+5. What’s the difference between notify() and notifyAll()?
+Answer:
+notify(): It sends a notification and wakes up only a single thread instead of multiple threads that are waiting on the object’s monitor.
+
+notifyAll(): It sends notifications and wakes up all threads and allows them to compete for the object's monitor instead of a single thread. 
+
