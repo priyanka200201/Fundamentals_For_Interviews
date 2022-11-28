@@ -1,0 +1,36 @@
+1. Which are the different factors that affect the security of a network?
+Answer:
+There are mainly two security affecting factors:
+Unauthorized Access
+Viruses
+
+
+2. Which are the different factors that affect the reliability of a network?
+Answer:
+The following factors affect the reliability of a network:
+Frequency of failure
+Recovery time of a network after a failure
+
+
+3. Which are the different factors that affect the performance of a network?
+Answer:
+The following factors affect the performance of a network:
+Large number of users
+Transmission medium types
+Hardware
+Software
+
+
+4. What makes a network effective and efficient?
+Answer:
+There are mainly two criteria which make a network effective and efficient:
+Performance: : performance can be measured in many ways like transmit time and response time.
+Reliability: reliability is measured by frequency of failure.
+Robustness: robustness specifies the quality or condition of being strong and in good condition.
+Security: It specifies how to protect data from unauthorized access and viruses.
+
+
+5. What is bandwidth?
+Answer:
+Every signal has a limit of upper range frequency and lower range frequency.
+The range of limit of network between its upper and lower frequency is called bandwidth.
