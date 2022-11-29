@@ -1,0 +1,61 @@
+1. What's the difference between User thread and Daemon thread?
+Answer:
+User and Daemon are basically two types of thread used in Java by using a ‘Thread Class’.  
+User Thread (Non-Daemon Thread): In Java, user threads have a specific life cycle and its life is independent of any other thread. 
+JVM (Java Virtual Machine) waits for any of the user threads to complete its tasks before terminating it. When user threads are finished, 
+JVM terminates the whole program along with associated daemon threads. 
+
+Daemon Thread: In Java, daemon threads are basically referred to as a service provider that provides services and support to user threads.
+There are basically two methods available in thread class for daemon thread: setDaemon() and isDaemon(). 
+
+
+2. How can we create daemon threads?
+Answer:
+We can create daemon threads in java using the thread class setDaemon(true). It is used to mark the current thread as daemon thread or user thread. isDaemon() method 
+is generally used to check whether the current thread is daemon or not. If the thread is a daemon, it will return true otherwise it returns false.  
+
+
+3. What are the wait() and sleep() methods?
+Answer:
+wait(): As the name suggests, it is a non-static method that causes the current thread to wait and go to sleep until some other threads call 
+the notify () or notifyAll() method for the object’s monitor (lock). It simply releases the lock and is mostly used for inter-thread communication.
+It is defined in the object class, and should only be called from a synchronized context. 
+
+Example:  
+
+synchronized(monitor) 
+{ 
+monitor.wait();       Here Lock Is Released by Current Thread  
+} 
+
+sleep(): As the name suggests, it is a static method that pauses or stops the execution of the current thread for some specified period. 
+It doesn’t release the lock while waiting and is mostly used to introduce pause on execution. It is defined in thread class,
+and no need to call from a synchronized context.  
+
+Example:  
+
+synchronized(monitor) 
+{ 
+Thread.sleep(1000);     Here Lock Is Held by The Current Thread 
+//after 1000 milliseconds, the current thread will wake up, or after we call that is interrupt() method 
+} 
+
+
+4. What is Runnable and Callable Interface? Write the difference between them.
+Answer:
+Both the interfaces are generally used to encapsulate tasks that are needed to be executed by another thread.
+But there are some differences between them as given below: 
+
+Running Interface: This interface is basically available in Java right from the beginning. It is simply used to execute code on a concurrent thread.
+
+Callable Interface: This interface is basically a new one that was introduced as a part of the concurrency package. 
+It addresses the limitation of runnable interfaces along with some major changes like generics, enum, static imports, variable argument method, etc.
+It uses generics to define the return type of object.   
+
+
+5. What is the start() and run() method of Thread class?
+start(): In simple words, the start() method is used to start or begin the execution of a newly created thread. When the start() method is called,
+a new thread is created and this newly created thread executes the task that is kept in the run() method. One can call the start() method only once.  
+
+run(): In simple words, the run() method is used to start or begin the execution of the same thread. When the run() method is called,
+no new thread is created as in the case of the start() method. This method is executed by the current thread. One can call the run() method multiple times
