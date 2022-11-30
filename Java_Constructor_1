@@ -1,0 +1,47 @@
+Q1  : What is a Constructor?
+Ans : Constructors are used to initialize the object’s state. Like methods, a constructor also contains collection of statements(i.e. instructions) 
+that are executed at 
+      time of Object creation.
+      
+ Q2  : Do we have Copy Constructor in Java?
+ Ans : Java also supports copy constructor. But, unlike C++, Java doesn’t create a default copy constructor if you don’t write your own.
+ To copy the values of one object into another in java, you can use:
+              Constructor
+              Assigning the values of one object into another
+              clone() method of Object class
+              
+Q3  : What is Constructor Chaining ?
+Ans : Constructor Chaining is a technique of calling another constructor from one constructor. this() is used to call same class constructor where as super() is used
+to call super class constructor.
+
+Q4  : Can we call sub class constructor from super class constructor?
+Ans : No. There is no way in java to call sub class constructor from a super class constructor.
+
+Q5  : What happens if you keep a return type for a constructor?
+Ans : Ideally, Constructor must not have a return type. By definition, if a method has a return type, it’s not a constructor.(JLS8.8 Declaration) 
+It will be treated as a normal method. 
+      But compiler gives a warning saying that method has a constructor name.
+
+Q6  : What is No-arg constructor?
+Ans : Constructor without arguments is called no-arg constructor. Default constructor in java is always a no-arg constructor.
+
+Q7  : How a no – argument constructor is different from default Constructor?
+Ans : If a class contains no constructor declarations, then a default constructor with no formal parameters and no throws clause is implicitly declared.
+If the class being declared is the primordial class Object, then the default constructor has an empty body. Otherwise, the default constructor simply 
+invokes the superclass constructor with no arguments.
+
+Q8  : What are private constructors and where are they used?
+Ans : Like any method we can provide access specifier to the constructor. If it’s made private, then it can only be accessed inside the class.
+      The major scenarios where we use private constructor:
+                Internal Constructor chaining
+                Singleton class design pattern
+
+Q9  : When do we need Constructor Overloading?
+Ans : Sometimes there is a need of initializing an object in different ways. This can be done using constructor overloading. Different constructors
+can do different work by implementing different line of 
+      codes and are called based on the type and no of parameters passed. According to the situation , a constructor is called with specific number 
+      of parameters among overloaded constructors.
+      
+Q10 : Do we have destructors in Java?
+Ans : No, Because Java is a garbage collected language you cannot predict when (or even if) an object will be destroyed. Hence there is no direct equivalent
+of a destructor.
