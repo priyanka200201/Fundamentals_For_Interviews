@@ -1,0 +1,39 @@
+1. What is meant by Process Scheduling?
+Answer:
+Multiprogramming is a technique through which a CPU can execute multiple jobs thereby increasing CPU utilization. This is generally done by keeping multiple jobs 
+in the memory and then using some scheduling algorithm to decide which job is picked when.
+Process Scheduling is what allows an OS to do multiprogramming. The OS maintains different queues for the different process states (Start, Ready, Running, Waiting, etc).
+The OS Scheduler moves the processes from one queue to another based on different scheduling algorithms.
+
+
+2. What is meant by Long-term Scheduler (Job Scheduler)?
+Answer:
+The Long-term Scheduler controls the degree of multiprogramming by bringing processes into the 'Ready Queue'. It moves a process from the 'New' state to the 'Ready' 
+state.
+The Long-term Scheduler decides which processes to add to the queue by making careful selections between CPU-bound processes and I/O-bound processes to maintain a
+balance.
+Modern Operating Systems don't have Long-term Schedulers.
+
+
+3. What is meant by Short-term Scheduler (CPU Scheduler)?
+Answer:
+The Short-term Scheduler moves a process from the 'Ready' state to the 'Running' state. It moves the process from the 'Ready Queue' and gives it to the CPU for 
+processing using a dispatcher. It tries to maximize CPU utilization and increase system performance.
+Short-term Schedulers take scheduling decisions very frequently and very fast compared to Long-term and Medium-term schedulers.
+
+
+4. What is meant by Medium-term Scheduler (Process Swapping Scheduler)?
+Answer:
+The Medium-term Scheduler does the job of swapping in and out a process from main memory to secondary memory (like disk space). It does so to make the memory available 
+for other processes. It swaps out processes that are inactive for some time or processes that take up a lot of memory or processes that have low priority. 
+It swaps the process in when memory is available or when the process has been unblocked, etc.
+Medium-term Schedulers take scheduling decisions more frequently and faster compared to Long-term schedulers.
+Medium-term Schedulers do the job of a Long-term Scheduler as well in Modern Operating Systems.
+
+
+5. What is Preemptive and Non-Preemptive Scheduling?
+Answer:
+Preemption is the act of temporarily interrupting an executing task with an intention to resume it later. This is done by schedulers through context switching.
+There are different scheduling algorithms with them being either preemptive or non-preemptive.
+Preemptive scheduling algorithms preempt a low priority process with a high priority process based on some criteria.
+Non-preemptive scheduling algorithms don't preempt a process after the process enters the 'Running' state.
