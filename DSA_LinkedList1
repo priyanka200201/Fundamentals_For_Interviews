@@ -1,0 +1,43 @@
+Q1.  What is Linked List?
+Ans: Linked Lists, like arrays, are linear data structures. Unlike arrays, linked list elements are not stored in a single location; instead, pointers are used to connect the elements.
+
+Q2.   How many types of Linked List exist?
+Ans: There are multiple types of Linked Lists available:
+          Singly Linked List
+          Doubly Linked List
+          Multiply Linked List
+          Circular Linked List
+          
+Q3.  Explain Singly Linked List in short.
+Ans: The singly linked list includes nodes which contain a data field and next field. The next field further points to the next node in the line of nodes.
+      In other words, the nodes in singly linked lists contain a pointer to the next node in the list. We can perform operations like insertion, deletion, and traversal in singly linked lists.
+      A singly linked list is shown below whose nodes contain two fields: an integer value and a pointer value (a link to the next node).
+      
+Q4.  What do you understand by Doubly Linked List?
+Ans: The doubly linked list includes a pointer (link) to the next node as well as to the previous node in the list. The two links between the nodes may be called "forward" and "backward, "or
+     "next" and "prev (previous)." A doubly linked list is shown below whose nodes consist of three fields: an integer value, a link that points to the next node, and a link that points to the previous node.
+     
+Q5.  How will you explain Circular Linked List?
+Ans: In the last node of a linked list, the link field often contains a null reference. Instead of including a null pointer at the end of the list, the last node in circular linked lists includes a 
+     pointer pointing to the first node. In such cases, the list is said to be ?circularly linked? otherwise it is said to be 'open' or 'linear.' A circular linked list is that type of list where the last 
+     pointer points or contains the address of the first node.
+
+Q6.  Which type of memory allocation is referred for Linked List?
+Ans: Dynamic memory allocation is referred for Linked List
+
+Q7.  How can you insert a node to the beginning of a singly linked list?
+Ans: To insert the node to the beginning of the list, we need to follow these steps:
+          Create a new node
+          Insert new node by assigning the head pointer to the new node's next pointer
+          Update the head pointer to point the new node
+          
+Q8.  Differentiate between singly and doubly linked lists?
+Ans: Doubly linked list nodes consist of three fields: an integer value and two links pointing to two other nodes (one to the last node and another to the next node).
+     On the other hand, a singly linked list consists of a link which points only to the next node.
+     
+Q9.  What do you know about traversal in linked lists?
+Ans: The term 'traversal' refers to the operation of processing each element present in the list.
+
+Q10. What does the dummy header in the linked list contain?
+Ans: In a linked list, the dummy header consists of the first record of the actual data.
+Footer
