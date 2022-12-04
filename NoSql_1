@@ -1,0 +1,28 @@
+1. What is NoSQL?
+NoSQL encompasses a wide variety of different database technologies that were developed in response to a rise in the volume of data stored about users,
+objects and products. The frequency in which this data is accessed, and performance and processing needs. Relational databases, on the other hand, were not designed to 
+cope with the scale and agility challenges that face modern applications, nor were they built to take advantage of the cheap storage and processing power available today.
+
+
+2. What are the features of NoSQL?
+When compared to relational databases, NoSQL databases are more scalable and provide superior performance, and their data model addresses several issues that the 
+relational model is not designed to address:
+
+Large volumes of structured, semi-structured, and unstructured data
+Agile sprints, quick iteration, and frequent code pushes
+Object-oriented programming that is easy to use and flexible
+Efficient, scale-out architecture instead of expensive, monolithic architecture
+
+
+3. How does NoSQL DB budget memory?
+The Replication Node manages the data in a NoSQL DB store and is the main consumer of memory. The Java heap and cache size used by the Replication Node can be 
+important performance factors. By default, the Replication Node heap and cache are calculated by NoSQL DB based on the amount of memory available to the Storage Node.
+
+
+4. Does NoSQL Database Interact With Oracle Database?
+NoSQL Database supports retrieving records through the Oracle Database External Table functions. This makes it possible to perform some queries from Oracle Database
+and retrieve records from NoSQL Database.
+
+5. When should I use a NoSQL database instead of a relational database?
+A relational database enforces ACID. So, we will have schema based transaction oriented data stores. It’s proven and suitable for 99% of the real world applications.
+We can practically do anything with relational databases.But, there are limitations on speed and scaling when it comes to massive high availability data stores.
