@@ -1,0 +1,85 @@
+Question 1: What is an Array?
+
+Answer:
+Array is a collection of similar data types.It can not have different data type. 
+It can hold both primitive types (int, float, double) and object references.
+It is fixed in length i.e static in nature. 
+Arrays are created on the heap memory not on the stack.
+Accessing an invalid index of an Array will cause exception.
+
+
+Question 2: How do you declare an Array in java?
+
+Answer:
+We can declare an Array in java by the following way :
+dataType[] arrayVariableName  = new dataType[arraySize];
+for example for int data type, you can declare an int array as :
+int[]  temp = new int[256]
+
+
+Question 3:  What is the default value of Array for different data types?
+
+Answer:
+Data Type                       Default value
+byte, short, int, long               0
+float, double                       0.0
+boolean                            false
+Any object                         null
+
+
+Question 4 Can you change size of Array in java after creation?
+
+Answer:
+You can not change the size of Array after creation. Although there are other data-structures which can change size after creation.
+
+
+Question 5: Can you pass the negative number in Array size?
+
+Answer:
+No, we can not pass the negative number as Array size. If we pass a negative number in Array size then we will not get the compiler error. 
+Instead, we will get the NegativeArraySizeException at run time.
+
+
+Question 6: Can you declare an Array without Array size?
+
+ Answer:
+No, you can not declare Array without Array size. You will get compile time error.
+
+
+Question 7: Where does Array stored in JVM memory ?
+
+Answer:
+ Array is an object in java. So, Array is stored in heap memory in JVM.
+
+
+Question 8: Given a primitive Array in java, where does in JVM it is stored?
+Answer:
+This is a follow-up question of Q7. An Array will always be an object on heap memory, even if the Array is declared to hold primitive elements.
+
+
+Question 9: What is ArrayStoreException ? When this exception is thrown ?
+
+Answer:
+ArrayStoreException is a runtime exception. Array must contain the same data type elements.
+This exception is thrown to indicate that an attempt has been made to store the wrong type of object into an array of objects.
+In other words, if you want to store the integer Object in an Array of String you will get ArrayStoreException.
+
+The following code throws ArrayStoreException :
+
+public class JavaHungry {
+    
+    public static void main(String args[]) {
+
+       Object x[] = new String[3];
+         x[0] = new Integer(0);
+    }
+}
+
+
+Question 10: What is the difference between ArrayStoreException and ArrayOutOfBoundsException ?
+ Answer:
+ArrayStoreException is thrown if you are trying to add incompatible data type. 
+For example, if you try to add an integer object to String Array, then ArrayStoreException is thrown.
+
+ArrayOutOfBoundsException is thrown when an attempt is made to access the Array with illegal index. 
+For example, illegal index means if the index is either negative or greater than or equal to the size of the Array.
